@@ -12,6 +12,8 @@
             <option value="$PROJECT_DIR$/butterknife" />
             <option value="$PROJECT_DIR$/butterknife-annotations" />
             <option value="$PROJECT_DIR$/butterknife-compiler" />
+            <option value="$PROJECT_DIR$/singleton-annotations" />
+            <option value="$PROJECT_DIR$/singleton-compiler" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/AnnotationProcessingExample.iml" filepath="$PROJECT_DIR$/AnnotationProcessingExample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AnnotationProcessing.iml" filepath="$PROJECT_DIR$/AnnotationProcessing.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/butterknife/butterknife.iml" filepath="$PROJECT_DIR$/butterknife/butterknife.iml" />
       <module fileurl="file://$PROJECT_DIR$/butterknife-annotations/butterknife-annotations.iml" filepath="$PROJECT_DIR$/butterknife-annotations/butterknife-annotations.iml" />
       <module fileurl="file://$PROJECT_DIR$/butterknife-compiler/butterknife-compiler.iml" filepath="$PROJECT_DIR$/butterknife-compiler/butterknife-compiler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/singleton-annotations/singleton-annotations.iml" filepath="$PROJECT_DIR$/singleton-annotations/singleton-annotations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/singleton-compiler/singleton-compiler.iml" filepath="$PROJECT_DIR$/singleton-compiler/singleton-compiler.iml" />
     </modules>
   </component>
 </project>
