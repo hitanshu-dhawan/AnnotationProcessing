@@ -27,4 +27,5 @@ dependencies {
     annotationProcessor project(':butterknife-compiler')
 
     implementation project(':singleton-annotations')
+    annotationProcessor project(':singleton-compiler')
 }

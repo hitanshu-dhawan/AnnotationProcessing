@@ -26,5 +26,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="singleton-annotations" exported="" />
+    <orderEntry type="module" module-name="singleton-annotations" exported="" />
   </component>
 </module>
