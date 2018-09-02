@@ -41,11 +41,9 @@ public class Processor extends AbstractProcessor {
     private boolean checkForPrivateConstructors(TypeElement typeElement) {
         List<ExecutableElement> constructors = ElementFilter.constructorsIn(typeElement.getEnclosedElements());
         for (ExecutableElement constructor : constructors) {
-            for (Modifier modifier : constructor.getModifiers()) {
-                if (modifier != Modifier.PRIVATE) {
-                    mProcessingEnvironment.getMessager().printMessage(Diagnostic.Kind.ERROR, "constructor of a singleton class must be private", constructor);
-                    return false;
-                }
+            if (constructor.getModifiers().isEmpty() || !constructor.getModifiers().contains(Modifier.PRIVATE)) {
+                mProcessingEnvironment.getMessager().printMessage(Diagnostic.Kind.ERROR, "constructor of a singleton class must be private", constructor);
+                return false;
             }
         }
         return true;
@@ -65,14 +63,16 @@ public class Processor extends AbstractProcessor {
                     // check for modifiers
                     if (method.getModifiers().contains(Modifier.PRIVATE)) {
                         mProcessingEnvironment.getMessager().printMessage(Diagnostic.Kind.ERROR, "getInstance method can't have a private modifier", method);
+                        return false;
                     }
-                    if (method.getModifiers().contains(Modifier.STATIC)) {
-                        return true;
+                    if (!method.getModifiers().contains(Modifier.STATIC)) {
+                        mProcessingEnvironment.getMessager().printMessage(Diagnostic.Kind.ERROR, "getInstance method should have a static modifier", method);
+                        return false;
                     }
                 }
             }
         }
-        return false;
+        return true;
     }
 
     @Override
