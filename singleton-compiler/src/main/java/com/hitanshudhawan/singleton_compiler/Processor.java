@@ -57,8 +57,7 @@ public class Processor extends AbstractProcessor {
             if (method.getSimpleName().contentEquals("getInstance")) {
 
                 // check for return type
-                if (mProcessingEnvironment.getTypeUtils().isSameType(method.getReturnType(), typeElement.asType()
-                )) {
+                if (mProcessingEnvironment.getTypeUtils().isSameType(method.getReturnType(), typeElement.asType())) {
 
                     // check for modifiers
                     if (method.getModifiers().contains(Modifier.PRIVATE)) {
