@@ -154,6 +154,8 @@ JavaFile javaFile = JavaFile.builder("com.example.helloworld", helloWorld)
 javaFile.writeTo(System.out);
 ```
 
+<b>Note</b> : There's also another Square library [KotlinPoet](https://github.com/square/kotlinpoet) for generating ```.kt``` files.
+
 # Demo #3 : ButterKnife
 #### Annotations
 1. [BindView.java](butterknife-annotations/src/main/java/com/hitanshudhawan/butterknife_annotations/BindView.java)
