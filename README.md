@@ -162,3 +162,51 @@ javaFile.writeTo(System.out);
 3. [Processor.java](butterknife-compiler/src/main/java/com/hitanshudhawan/butterknife_compiler/Processor.java)
 #### Library
 4. [ButterKnife.java](butterknife/src/main/java/com/hitanshudhawan/butterknife/ButterKnife.java)
+
+### Example
+This ButterKnife library will generate separate classes (with suffix ```Binder```) for each of the Activity where we used the annotations ```@BindView``` or ```@OnClick```.<br>
+
+<b>```MainActivity.java```</b>
+```
+public class MainActivity extends AppCompatActivity {
+
+    private int numberOfTimesTextViewClicked = 0;
+
+    @BindView(R.id.text_view)
+    TextView textView;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        ButterKnife.bind(this);
+    }
+
+    @OnClick(R.id.text_view)
+    void onTextViewClicked(View view) {
+        textView.setText(String.valueOf(++numberOfTimesTextViewClicked));
+    }
+}
+```
+<b>```MainActivityBinder.java```</b>
+```
+public class MainActivityBinder {
+    public MainActivityBinder(MainActivity activity) {
+        bindViews(activity);
+        bindOnClicks(activity);
+    }
+
+    private void bindViews(MainActivity activity) {
+        activity.textView = (TextView) activity.findViewById(2131165314);
+    }
+
+    private void bindOnClicks(final MainActivity activity) {
+        activity.findViewById(2131165314).setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                activity.onTextViewClicked(view);
+            }
+        });
+    }
+}
+```
