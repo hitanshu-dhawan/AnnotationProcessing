@@ -29,7 +29,11 @@ dependencies {
 
     implementation project(':singleton-annotations')
     annotationProcessor project(':singleton-compiler')
-    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    implementation project(':ksingleton-annotations')
+    annotationProcessor project(':ksingleton-compiler')
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
 repositories {
     mavenCentral()

@@ -69,7 +69,7 @@ class Processor : AbstractProcessor() {
     override fun getSupportedAnnotationTypes(): Set<String> {
         return object : HashSet<String>() {
             init {
-                add(KSingleton::class.java!!.getCanonicalName())
+                add(KSingleton::class.java.canonicalName)
             }
         }
     }

@@ -1,5 +1,6 @@
 package com.hitanshudhawan.annotationprocessingexample;
 
+import com.hitanshudhawan.ksingleton_annotations.KSingleton;
 import com.hitanshudhawan.singleton_annotations.Singleton;
 
 @Singleton
