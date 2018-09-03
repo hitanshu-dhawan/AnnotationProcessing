@@ -1,1 +1,1 @@
-include ':app', ':butterknife', ':butterknife-annotations', ':butterknife-compiler', ':singleton-annotations', ':singleton-compiler'
+include ':app', ':butterknife', ':butterknife-annotations', ':butterknife-compiler', ':singleton-annotations', ':singleton-compiler', ':ksingleton-annotations', ':ksingleton-compiler'

@@ -7,6 +7,8 @@
       <module fileurl="file://$PROJECT_DIR$/butterknife/butterknife.iml" filepath="$PROJECT_DIR$/butterknife/butterknife.iml" />
       <module fileurl="file://$PROJECT_DIR$/butterknife-annotations/butterknife-annotations.iml" filepath="$PROJECT_DIR$/butterknife-annotations/butterknife-annotations.iml" />
       <module fileurl="file://$PROJECT_DIR$/butterknife-compiler/butterknife-compiler.iml" filepath="$PROJECT_DIR$/butterknife-compiler/butterknife-compiler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ksingleton-annotations/ksingleton-annotations.iml" filepath="$PROJECT_DIR$/ksingleton-annotations/ksingleton-annotations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ksingleton-compiler/ksingleton-compiler.iml" filepath="$PROJECT_DIR$/ksingleton-compiler/ksingleton-compiler.iml" />
       <module fileurl="file://$PROJECT_DIR$/singleton-annotations/singleton-annotations.iml" filepath="$PROJECT_DIR$/singleton-annotations/singleton-annotations.iml" />
       <module fileurl="file://$PROJECT_DIR$/singleton-compiler/singleton-compiler.iml" filepath="$PROJECT_DIR$/singleton-compiler/singleton-compiler.iml" />
     </modules>
