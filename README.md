@@ -115,6 +115,10 @@ returns the latest source version supported by this processor.
 1. [Singleton.java](singleton-annotations/src/main/java/com/hitanshudhawan/singleton_annotations/Singleton.java)
 2. [Processor.java](singleton-compiler/src/main/java/com/hitanshudhawan/singleton_compiler/Processor.java)
 
+# Demo #2 : KSingleton
+1. [KSingleton.kt](ksingleton-annotations/src/main/java/com/hitanshudhawan/ksingleton_annotations/KSingleton.kt)
+2. [Processor.kt](ksingleton-compiler/src/main/java/com/hitanshudhawan/ksingleton_compiler/Processor.kt)
+
 # How to generate .java files ?
 We can use Square's [JavaPoet](https://github.com/square/javapoet) library for generating ```.java``` files.<br>
 JavaPoet makes it really simple to define a class structure and write it while processing. It creates classes that are very close to a handwritten code.
@@ -150,7 +154,7 @@ JavaFile javaFile = JavaFile.builder("com.example.helloworld", helloWorld)
 javaFile.writeTo(System.out);
 ```
 
-# Demo #2 : ButterKnife
+# Demo #3 : ButterKnife
 #### Annotations
 1. [BindView.java](butterknife-annotations/src/main/java/com/hitanshudhawan/butterknife_annotations/BindView.java)
 2. [OnClick.java](butterknife-annotations/src/main/java/com/hitanshudhawan/butterknife_annotations/OnClick.java)
