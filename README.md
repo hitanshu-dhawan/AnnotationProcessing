@@ -119,6 +119,25 @@ returns the latest source version supported by this processor.
 1. [KSingleton.kt](ksingleton-annotations/src/main/java/com/hitanshudhawan/ksingleton_annotations/KSingleton.kt)
 2. [Processor.kt](ksingleton-compiler/src/main/java/com/hitanshudhawan/ksingleton_compiler/Processor.kt)
 
+# Important Classes/Objects
+<b>```ProcessingEnvironment```</b> : An annotation processing tool framework will provide an annotation processor with an object implementing this interface so the processor can use facilities provided by the framework to write new files, report error messages, and find other utilities.
+
+<b>```Elements```</b> : Utility methods for operating on program elements. Can be accessed by ```ProcessingEnvironment.getElementUtils()```.
+
+<b>```Types```</b> : Utility methods for operating on types. Can be accessed by ```ProcessingEnvironment.getTypeUtils()```.
+
+<b>```Messager```</b> : A Messager provides the way for an annotation processor to report error messages, warnings, and other notices. Can be accessed by ```ProcessingEnvironment.getMessager()```.
+
+<b>```Filer```</b> : This interface supports the creation of new files by an annotation processor. Can be accessed by ```ProcessingEnvironment.getFiler()```.
+
+<br>
+
+<b>```RoundEnvironment```</b> : An annotation processing tool framework will provide an annotation processor with an object implementing this interface so that the processor can query for information about a round of annotation processing. We can get our desired elements with ```RoundEnvironment.getRootElements()``` and ```RoundEnvironment.getElementsAnnotatedWith()``` methods.
+
+<br>
+
+<b>```ElementFilter```</b> : Filters for selecting just the elements of interest from a collection of elements. Contains methods like ```ElementFilter.constructorsIn()```, ```ElementFilter.methodsIn()```, ```ElementFilter.fieldsIn()``` etc.
+
 # How to generate .java files ?
 We can use Square's [JavaPoet](https://github.com/square/javapoet) library for generating ```.java``` files.<br>
 JavaPoet makes it really simple to define a class structure and write it while processing. It creates classes that are very close to a handwritten code.
