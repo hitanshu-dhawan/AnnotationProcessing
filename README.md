@@ -238,6 +238,7 @@ public class MainActivityBinder {
     <li>https://youtu.be/2Dlo8OSwzaI</li>
     <li>https://youtu.be/cBD4aiJ8EDo</li>
     <li>https://docs.oracle.com/javase/8/docs/api/javax/annotation/processing/package-summary.html</li>
+    <li>https://docs.oracle.com/javase/7/docs/jdk/api/apt/mirror/overview-summary.html</li>
     <li>https://kotlinlang.org/docs/reference/annotations.html</li>
     <li>https://stackoverflow.com/q/2123118</li>
 </ul>
