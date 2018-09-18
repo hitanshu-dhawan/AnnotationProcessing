@@ -241,4 +241,8 @@ public class MainActivityBinder {
     <li>https://docs.oracle.com/javase/7/docs/jdk/api/apt/mirror/overview-summary.html</li>
     <li>https://kotlinlang.org/docs/reference/annotations.html</li>
     <li>https://stackoverflow.com/q/2123118</li>
+    <li>https://docs.oracle.com/javase/7/docs/technotes/tools/solaris/javac.html#processing</li>
+    <li>https://docs.oracle.com/javase/1.5.0/docs/guide/apt/GettingStarted.html</li>
+    <li>https://docs.oracle.com/javase/7/docs/technotes/guides/apt/index.html</li>
+    <li>https://kotlinlang.org/docs/reference/kapt.html</li>
 </ul>
