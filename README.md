@@ -31,7 +31,8 @@ The Target of an annotation specifies which Java [ElementType](https://docs.orac
 \*Annotation processing can only be used to generate new files and not to modify old ones
 
 ## How does Annotation Processing work ?
-The annotation processing takes place in many compilation cycles. In each cycle, the compiler while reading a java source file finds the annotations registered for processing and calls the corresponding annotation processor. This cycle continues with the generation of any file or terminates if no file is generated in that cycle.
+The annotation processing takes place in many rounds. The compiler reads a java source file with the registered annotations and calls their corresponding annotation processors which will generate more java source files with more annotations. These new annotations will again call their corresponding annotation processors which will again generate more java source files.
+This cycle continues until no new java source file is generated in the cycle.
 
 ![](https://github.com/hitanshu-dhawan/AnnotationProcessing/blob/master/images/AnnotationProcessingRounds.png)
 
