@@ -28,7 +28,7 @@ The Target of an annotation specifies which Java [ElementType](https://docs.orac
 #### 1. <del>Runtime</del> Compile time
 #### 2. No Reflection
 #### 3. Generate boilerplate code*
-\*Annotation processing can only be used to generate new files and not to modify old ones
+\*Annotation processing can only be used to generate new files and not to modify existing ones
 
 ## How does Annotation Processing work ?
 The annotation processing takes place in many rounds. The compiler reads a java source file with the registered annotations and calls their corresponding annotation processors which will generate more java source files with more annotations. These new annotations will again call their corresponding annotation processors which will again generate more java source files.
