@@ -1,7 +1,6 @@
 package com.hitanshudhawan.ksingleton_compiler
 
 import com.hitanshudhawan.ksingleton_annotations.KSingleton
-import java.util.*
 import javax.annotation.processing.AbstractProcessor
 import javax.annotation.processing.ProcessingEnvironment
 import javax.annotation.processing.RoundEnvironment
@@ -67,11 +66,7 @@ class Processor : AbstractProcessor() {
     }
 
     override fun getSupportedAnnotationTypes(): Set<String> {
-        return object : HashSet<String>() {
-            init {
-                add(KSingleton::class.java.canonicalName)
-            }
-        }
+        return setOf(KSingleton::class.java.canonicalName)
     }
 
     override fun getSupportedSourceVersion(): SourceVersion {
