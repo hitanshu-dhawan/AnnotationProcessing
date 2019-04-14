@@ -248,4 +248,7 @@ public class MainActivityBinder {
     <li>https://docs.oracle.com/javase/1.5.0/docs/guide/apt/GettingStarted.html</li>
     <li>https://docs.oracle.com/javase/7/docs/technotes/guides/apt/index.html</li>
     <li>https://kotlinlang.org/docs/reference/kapt.html</li>
+    <li>https://docs.oracle.com/javase/8/docs/api/javax/lang/model/package-summary.html</li>
+    <li>https://bracha.org/mirrors.pdf</li>
+    <li>https://docs.oracle.com/javase/7/docs/jdk/api/apt/mirror/overview-summary.html</li>
 </ul>
