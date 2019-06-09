@@ -251,4 +251,5 @@ public class MainActivityBinder {
     <li>https://docs.oracle.com/javase/8/docs/api/javax/lang/model/package-summary.html</li>
     <li>https://bracha.org/mirrors.pdf</li>
     <li>https://docs.oracle.com/javase/7/docs/jdk/api/apt/mirror/overview-summary.html</li>
+    <li>http://hannesdorfmann.com/annotation-processing/annotationprocessing101</li>
 </ul>
