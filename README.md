@@ -1,4 +1,6 @@
 Full article here: https://medium.com/androidiots/writing-your-own-annotation-processors-in-android-1fa0cd96ef11
+<br>
+[![Android Weekly](https://androidweekly.net/issues/issue-329/badge)](http://androidweekly.net/issues/issue-329)
 
 # What are Annotations ?
 An annotation is a form of syntactic <b>metadata</b> that can be added to Java source code.<br>
