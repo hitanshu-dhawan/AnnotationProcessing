@@ -1,5 +1,5 @@
 Full article here: https://medium.com/androidiots/writing-your-own-annotation-processors-in-android-1fa0cd96ef11
-<br>
+<br><br>
 [![Android Weekly](https://androidweekly.net/issues/issue-329/badge)](http://androidweekly.net/issues/issue-329)
 
 # What are Annotations ?
