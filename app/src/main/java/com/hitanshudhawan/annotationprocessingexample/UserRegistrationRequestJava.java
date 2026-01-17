@@ -6,11 +6,8 @@ import com.hitanshudhawan.networkmodel.NetworkModel;
 @NetworkModel
 public class UserRegistrationRequestJava {
 
-    @SerializedName("first_name")
-    public String firstName;
-
-    @SerializedName("last_name")
-    public String lastName;
+    @SerializedName("user_name")
+    public UserNameJava userName;
 
     @SerializedName("email_address")
     public String email;
@@ -20,9 +17,8 @@ public class UserRegistrationRequestJava {
 
     public transient boolean isAdmin; // transient keyword in Java corresponds to @Transient in Kotlin/JVM
 
-    public UserRegistrationRequestJava(String firstName, String lastName, String email, Integer age, boolean isAdmin) {
-        this.firstName = firstName;
-        this.lastName = lastName;
+    public UserRegistrationRequestJava(UserNameJava userName, String email, Integer age, boolean isAdmin) {
+        this.userName = userName;
         this.email = email;
         this.age = age;
         this.isAdmin = isAdmin;
