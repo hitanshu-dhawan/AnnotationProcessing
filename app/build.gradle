@@ -44,6 +44,7 @@ dependencies {
 
     implementation project(':network-model-annotations')
     kapt project(':network-model-compiler')
+    lintChecks project(':network-model-lint')
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
