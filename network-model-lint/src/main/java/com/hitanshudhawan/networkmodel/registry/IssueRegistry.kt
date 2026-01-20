@@ -3,12 +3,16 @@ package com.hitanshudhawan.networkmodel.registry
 import com.android.tools.lint.client.api.IssueRegistry
 import com.android.tools.lint.detector.api.CURRENT_API
 import com.android.tools.lint.detector.api.Issue
-import com.hitanshudhawan.networkmodel.MyLogDetector
+import com.hitanshudhawan.networkmodel.NetworkModelRequestDetector
+import com.hitanshudhawan.networkmodel.NetworkModelResponseDetector
 
 class IssueRegistry : IssueRegistry() {
 
     override val issues: List<Issue>
-        get() = listOf(MyLogDetector.ISSUE)
+        get() = listOf(
+            NetworkModelRequestDetector.ISSUE,
+//            NetworkModelResponseDetector.ISSUE,
+        )
 
     override val api: Int = CURRENT_API
 
