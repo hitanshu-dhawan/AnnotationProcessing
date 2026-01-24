@@ -42,9 +42,9 @@ dependencies {
     implementation project(':ksingleton-annotations')
     kapt project(':ksingleton-compiler')
 
-    implementation project(':network-model-annotations')
-    kapt project(':network-model-compiler')
-    lintChecks project(':network-model-lint')
+    implementation project(':network-model-validator-annotations')
+    kapt project(':network-model-validator-compiler')
+    lintChecks project(':network-model-validator-lint')
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }

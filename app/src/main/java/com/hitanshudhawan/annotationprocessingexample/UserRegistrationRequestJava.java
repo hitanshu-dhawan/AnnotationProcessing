@@ -1,7 +1,7 @@
 package com.hitanshudhawan.annotationprocessingexample;
 
 import com.google.gson.annotations.SerializedName;
-import com.hitanshudhawan.networkmodel.NetworkModel;
+import com.hitanshudhawan.networkmodelvalidator.NetworkModel;
 
 @NetworkModel
 public class UserRegistrationRequestJava {

@@ -1,1 +1,1 @@
-include ':app', ':butterknife', ':butterknife-annotations', ':butterknife-compiler', ':singleton-annotations', ':singleton-compiler', ':ksingleton-annotations', ':ksingleton-compiler', ':network-model-annotations', ':network-model-compiler', ':network-model-lint'
+include ':app', ':butterknife', ':butterknife-annotations', ':butterknife-compiler', ':singleton-annotations', ':singleton-compiler', ':ksingleton-annotations', ':ksingleton-compiler', ':network-model-validator-annotations', ':network-model-validator-compiler', ':network-model-validator-lint'
