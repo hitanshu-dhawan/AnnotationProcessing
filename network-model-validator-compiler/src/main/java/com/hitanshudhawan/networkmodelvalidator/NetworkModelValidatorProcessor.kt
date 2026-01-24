@@ -20,7 +20,7 @@ import javax.tools.Diagnostic
  * 2. All field types (and their generic type arguments) must be annotated with @NetworkModel
  * 3. Subclasses of @NetworkModel annotated classes must also be annotated with @NetworkModel
  */
-class Processor : AbstractProcessor() {
+class NetworkModelValidatorProcessor : AbstractProcessor() {
 
     // ============================================================
     // Constants

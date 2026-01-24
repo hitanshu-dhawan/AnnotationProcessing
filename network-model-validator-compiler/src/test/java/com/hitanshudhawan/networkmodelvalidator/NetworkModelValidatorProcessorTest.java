@@ -67,7 +67,7 @@ import static com.google.testing.compile.Compiler.javac;
  *   <tr><td>testJavaClass_complexNestedStructure_success</td><td>Complex real-world scenario</td></tr>
  * </table>
  */
-public class ProcessorTest {
+public class NetworkModelValidatorProcessorTest {
 
     // ==================== SUCCESS SCENARIOS ====================
 
@@ -98,7 +98,7 @@ public class ProcessorTest {
         );
 
         Compilation compilation = javac()
-                .withProcessors(new Processor())
+                .withProcessors(new NetworkModelValidatorProcessor())
                 .compile(source);
 
         assertThat(compilation).succeeded();
@@ -137,7 +137,7 @@ public class ProcessorTest {
         );
 
         Compilation compilation = javac()
-                .withProcessors(new Processor())
+                .withProcessors(new NetworkModelValidatorProcessor())
                 .compile(source);
 
         assertThat(compilation).succeeded();
@@ -167,7 +167,7 @@ public class ProcessorTest {
         );
 
         Compilation compilation = javac()
-                .withProcessors(new Processor())
+                .withProcessors(new NetworkModelValidatorProcessor())
                 .compile(source);
 
         assertThat(compilation).succeeded();
@@ -197,7 +197,7 @@ public class ProcessorTest {
         );
 
         Compilation compilation = javac()
-                .withProcessors(new Processor())
+                .withProcessors(new NetworkModelValidatorProcessor())
                 .compile(source);
 
         assertThat(compilation).succeeded();
@@ -233,7 +233,7 @@ public class ProcessorTest {
         );
 
         Compilation compilation = javac()
-                .withProcessors(new Processor())
+                .withProcessors(new NetworkModelValidatorProcessor())
                 .compile(source);
 
         assertThat(compilation).succeeded();
@@ -280,7 +280,7 @@ public class ProcessorTest {
         );
 
         Compilation compilation = javac()
-                .withProcessors(new Processor())
+                .withProcessors(new NetworkModelValidatorProcessor())
                 .compile(addressModel, userModel);
 
         assertThat(compilation).succeeded();
@@ -328,7 +328,7 @@ public class ProcessorTest {
         );
 
         Compilation compilation = javac()
-                .withProcessors(new Processor())
+                .withProcessors(new NetworkModelValidatorProcessor())
                 .compile(itemModel, orderModel);
 
         assertThat(compilation).succeeded();
@@ -375,7 +375,7 @@ public class ProcessorTest {
         );
 
         Compilation compilation = javac()
-                .withProcessors(new Processor())
+                .withProcessors(new NetworkModelValidatorProcessor())
                 .compile(baseModel, childModel);
 
         assertThat(compilation).succeeded();
@@ -420,7 +420,7 @@ public class ProcessorTest {
         );
 
         Compilation compilation = javac()
-                .withProcessors(new Processor())
+                .withProcessors(new NetworkModelValidatorProcessor())
                 .compile(productModel, catalogModel);
 
         assertThat(compilation).succeeded();
@@ -444,7 +444,7 @@ public class ProcessorTest {
         );
 
         Compilation compilation = javac()
-                .withProcessors(new Processor())
+                .withProcessors(new NetworkModelValidatorProcessor())
                 .compile(source);
 
         assertThat(compilation).succeeded();
@@ -467,7 +467,7 @@ public class ProcessorTest {
         );
 
         Compilation compilation = javac()
-                .withProcessors(new Processor())
+                .withProcessors(new NetworkModelValidatorProcessor())
                 .compile(source);
 
         assertThat(compilation).succeeded();
@@ -531,7 +531,7 @@ public class ProcessorTest {
         );
 
         Compilation compilation = javac()
-                .withProcessors(new Processor())
+                .withProcessors(new NetworkModelValidatorProcessor())
                 .compile(countryModel, addressModel, companyModel);
 
         assertThat(compilation).succeeded();
@@ -562,7 +562,7 @@ public class ProcessorTest {
         );
 
         Compilation compilation = javac()
-                .withProcessors(new Processor())
+                .withProcessors(new NetworkModelValidatorProcessor())
                 .compile(source);
 
         assertThat(compilation).failed();
@@ -590,7 +590,7 @@ public class ProcessorTest {
         );
 
         Compilation compilation = javac()
-                .withProcessors(new Processor())
+                .withProcessors(new NetworkModelValidatorProcessor())
                 .compile(source);
 
         assertThat(compilation).failed();
@@ -633,7 +633,7 @@ public class ProcessorTest {
         );
 
         Compilation compilation = javac()
-                .withProcessors(new Processor())
+                .withProcessors(new NetworkModelValidatorProcessor())
                 .compile(unannotatedModel, userModel);
 
         assertThat(compilation).failed();
@@ -673,7 +673,7 @@ public class ProcessorTest {
         );
 
         Compilation compilation = javac()
-                .withProcessors(new Processor())
+                .withProcessors(new NetworkModelValidatorProcessor())
                 .compile(baseModel, childModel);
 
         assertThat(compilation).failed();
@@ -715,7 +715,7 @@ public class ProcessorTest {
         );
 
         Compilation compilation = javac()
-                .withProcessors(new Processor())
+                .withProcessors(new NetworkModelValidatorProcessor())
                 .compile(unannotatedItem, orderModel);
 
         assertThat(compilation).failed();
@@ -754,7 +754,7 @@ public class ProcessorTest {
         );
 
         Compilation compilation = javac()
-                .withProcessors(new Processor())
+                .withProcessors(new NetworkModelValidatorProcessor())
                 .compile(unannotatedProduct, catalogModel);
 
         assertThat(compilation).failed();
@@ -794,7 +794,7 @@ public class ProcessorTest {
         );
 
         Compilation compilation = javac()
-                .withProcessors(new Processor())
+                .withProcessors(new NetworkModelValidatorProcessor())
                 .compile(unannotatedCountry, addressModel);
 
         assertThat(compilation).failed();
@@ -848,7 +848,7 @@ public class ProcessorTest {
         );
 
         Compilation compilation = javac()
-                .withProcessors(new Processor())
+                .withProcessors(new NetworkModelValidatorProcessor())
                 .compile(baseModel, childModel, grandchildModel);
 
         assertThat(compilation).failed();
@@ -896,7 +896,7 @@ public class ProcessorTest {
         );
 
         Compilation compilation = javac()
-                .withProcessors(new Processor())
+                .withProcessors(new NetworkModelValidatorProcessor())
                 .compile(source);
 
         assertThat(compilation).succeeded();
@@ -931,7 +931,7 @@ public class ProcessorTest {
         );
 
         Compilation compilation = javac()
-                .withProcessors(new Processor())
+                .withProcessors(new NetworkModelValidatorProcessor())
                 .compile(source);
 
         assertThat(compilation).succeeded();
@@ -1003,7 +1003,7 @@ public class ProcessorTest {
         );
 
         Compilation compilation = javac()
-                .withProcessors(new Processor())
+                .withProcessors(new NetworkModelValidatorProcessor())
                 .compile(tagModel, authorModel, articleModel);
 
         assertThat(compilation).succeeded();
@@ -1044,7 +1044,7 @@ public class ProcessorTest {
         );
 
         Compilation compilation = javac()
-                .withProcessors(new Processor())
+                .withProcessors(new NetworkModelValidatorProcessor())
                 .compile(unannotatedType, problematicModel);
 
         assertThat(compilation).failed();
@@ -1087,7 +1087,7 @@ public class ProcessorTest {
         );
 
         Compilation compilation = javac()
-                .withProcessors(new Processor())
+                .withProcessors(new NetworkModelValidatorProcessor())
                 .compile(enumType, modelWithEnum);
 
         assertThat(compilation).failed();
@@ -1134,7 +1134,7 @@ public class ProcessorTest {
         );
 
         Compilation compilation = javac()
-                .withProcessors(new Processor())
+                .withProcessors(new NetworkModelValidatorProcessor())
                 .compile(interfaceType, implementation, modelWithInterface);
 
         assertThat(compilation).failed();
@@ -1166,7 +1166,7 @@ public class ProcessorTest {
         );
 
         Compilation compilation = javac()
-                .withProcessors(new Processor())
+                .withProcessors(new NetworkModelValidatorProcessor())
                 .compile(outerClass);
 
         assertThat(compilation).failed();
@@ -1200,7 +1200,7 @@ public class ProcessorTest {
         );
 
         Compilation compilation = javac()
-                .withProcessors(new Processor())
+                .withProcessors(new NetworkModelValidatorProcessor())
                 .compile(outerClass);
 
         assertThat(compilation).succeeded();
@@ -1228,7 +1228,7 @@ public class ProcessorTest {
         );
 
         Compilation compilation = javac()
-                .withProcessors(new Processor())
+                .withProcessors(new NetworkModelValidatorProcessor())
                 .compile(source);
 
         assertThat(compilation).succeeded();
@@ -1265,7 +1265,7 @@ public class ProcessorTest {
         );
 
         Compilation compilation = javac()
-                .withProcessors(new Processor())
+                .withProcessors(new NetworkModelValidatorProcessor())
                 .compile(cellType, matrixModel);
 
         assertThat(compilation).failed();
