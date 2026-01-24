@@ -5,4 +5,13 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation project(':network-model-validator-annotations')
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+
+    // Test dependencies
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'com.google.testing.compile:compile-testing:0.23.0'
+    testImplementation 'com.google.code.gson:gson:2.13.2'
+}
+
+test {
+    useJUnit()
 }
