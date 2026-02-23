@@ -1,5 +1,5 @@
 package com.hitanshudhawan.networkmodelvalidator
 
-@Retention(AnnotationRetention.SOURCE)
+@Retention(AnnotationRetention.BINARY)
 @Target(AnnotationTarget.CLASS)
 annotation class NetworkModel

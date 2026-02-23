@@ -1,8 +1,23 @@
 package com.hitanshudhawan.annotationprocessingexample.network
 
-class NetworkRequest internal constructor() {
+import androidx.annotation.WorkerThread
 
-    fun processSync(): NetworkResponse {
+class NetworkRequest() {
+
+    inline fun <reified T_Success, reified T_Error> processAsync(callback: ResponseCallback<T_Success, T_Error>) {
+        // ...
+    }
+
+    fun <T_Success, T_Error> processAsyncForJava(successClass: Class<T_Success>, errorClass: Class<T_Error>, callback: ResponseCallback<T_Success, T_Error>) {
+        // ...
+    }
+
+    @WorkerThread
+    fun processSyncForJava(): NetworkResponse {
+        return NetworkResponse()
+    }
+
+    suspend fun processSync(): NetworkResponse {
         return NetworkResponse()
     }
 
