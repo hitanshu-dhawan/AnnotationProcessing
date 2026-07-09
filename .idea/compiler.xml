@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel target="17">
+      <module name="AnnotationProcessing.network-model-annotations" target="17" />
+      <module name="AnnotationProcessing.network-model-annotations.main" target="17" />
+      <module name="AnnotationProcessing.network-model-annotations.test" target="17" />
+      <module name="AnnotationProcessing.network-model-compiler" target="17" />
+      <module name="AnnotationProcessing.network-model-compiler.main" target="17" />
+      <module name="AnnotationProcessing.network-model-compiler.test" target="17" />
+      <module name="AnnotationProcessing.network-model-lint" target="17" />
+      <module name="AnnotationProcessing.network-model-lint.main" target="17" />
+      <module name="AnnotationProcessing.network-model-lint.test" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

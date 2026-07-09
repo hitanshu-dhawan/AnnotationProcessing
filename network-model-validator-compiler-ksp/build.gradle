@@ -1,0 +1,18 @@
+apply plugin: 'java-library'
+apply plugin: 'kotlin'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':network-model-validator-annotations-ksp')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    implementation "com.google.devtools.ksp:symbol-processing-api:$ksp_version"
+
+    // Test dependencies
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'dev.zacsweers.kctfork:ksp:0.8.0'
+    testImplementation 'com.google.code.gson:gson:2.13.2'
+}
+
+test {
+    useJUnit()
+}

@@ -1,5 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'com.google.devtools.ksp'
 
 android {
     namespace 'com.hitanshudhawan.annotationprocessingexample'
@@ -25,18 +27,28 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
+
     implementation 'androidx.appcompat:appcompat:1.7.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.2.1'
 
+    implementation 'com.google.code.gson:gson:2.13.2'
+
     implementation project(':butterknife')
     implementation project(':butterknife-annotations')
-    annotationProcessor project(':butterknife-compiler')
+    kapt project(':butterknife-compiler')
 
     implementation project(':singleton-annotations')
-    annotationProcessor project(':singleton-compiler')
+    kapt project(':singleton-compiler')
 
     implementation project(':ksingleton-annotations')
-    annotationProcessor project(':ksingleton-compiler')
+    kapt project(':ksingleton-compiler')
+
+//    implementation project(':network-model-validator-annotations')
+//    kapt project(':network-model-validator-compiler')
+    implementation project(':network-model-validator-annotations-ksp')
+    ksp project(':network-model-validator-compiler-ksp')
+
+    lintChecks project(':network-model-validator-lint')
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
