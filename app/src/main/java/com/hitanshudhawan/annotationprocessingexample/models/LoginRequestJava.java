@@ -1,7 +1,7 @@
 package com.hitanshudhawan.annotationprocessingexample.models;
 
 import com.google.gson.annotations.SerializedName;
-import com.hitanshudhawan.networkmodelvalidator.NetworkModel;
+import com.hitanshudhawan.networkmodelvalidator.ksp.NetworkModel;
 
 /**
  * Sample login request model in Java.

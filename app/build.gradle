@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
+apply plugin: 'com.google.devtools.ksp'
 
 android {
     namespace 'com.hitanshudhawan.annotationprocessingexample'
@@ -42,8 +43,11 @@ dependencies {
     implementation project(':ksingleton-annotations')
     kapt project(':ksingleton-compiler')
 
-    implementation project(':network-model-validator-annotations')
-    kapt project(':network-model-validator-compiler')
+//    implementation project(':network-model-validator-annotations')
+//    kapt project(':network-model-validator-compiler')
+    implementation project(':network-model-validator-annotations-ksp')
+    ksp project(':network-model-validator-compiler-ksp')
+
     lintChecks project(':network-model-validator-lint')
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
